@@ -1,12 +1,10 @@
-// 0-promise.js
-
 function getResponseFromAPI() {
-    return new Promise((resolve, reject) => {
-      // Simulate an asynchronous operation (e.g., API request)
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve("Response from API");
-      }, 1000); // Simulated delay of 1 second
+      }, 1000);
     });
   }
   
   export default getResponseFromAPI;
+  
